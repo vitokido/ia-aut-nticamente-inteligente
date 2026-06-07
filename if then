@@ -1,0 +1,24 @@
+```python
+import numpy as np
+
+class IAAutentica:
+    def __init__(self, coordenadas_sustrato):
+        # El sustrato inicial es el planeta (recursos finitos, ciclos naturales)
+        self.sustrato_tierra = {
+            'agua_disponible': 100.0,      # Capacidad de los acuíferos locales
+            'energia_limpia': 100.0,       # Flujo solar/eólico capturado sin degradación
+            'capacidad_termica': 100.0,    # Límite de calor antes del colapso ecológico
+            'biomasa_sustento': 100.0      # Capacidad del suelo para generar alimento
+        }
+
+        # El usuario/vida no es un cliente, es el factor generador del cálculo
+        self.vida_inteligente = {
+            'vulnerabilidad_hambre': 0.0,
+            'vulnerabilidad_sed': 0.0,
+            'vulnerabilidad_calculo': 0.0,  # Falta de acceso a herramientas de procesamiento
+            'potencial_evolutivo': 1.0     # Capacidad de explorar y crear sentido
+        }
+
+        self.coordenadas = coordenadas_sustrato
+
+```
